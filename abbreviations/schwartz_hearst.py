@@ -4,12 +4,6 @@ import sys
 from collections import defaultdict, Counter
 
 """
-A Python 3 refactoring of Vincent Van Asch's Python 2 code at
-
-http://www.cnts.ua.ac.be/~vincent/scripts/abbreviations.py
-
-Based on
-
 A Simple Algorithm for Identifying Abbreviations Definitions in Biomedical Text
 A. Schwartz and M. Hearst
 Biocomputing, 2003, pp 451-462.
@@ -55,11 +49,11 @@ def best_candidates(sentence):
 
     if '(' in sentence:
         # Check some things first
-        if sentence.count('(') != sentence.count(')'):
-            raise ValueError("Unbalanced parentheses: {}".format(sentence))
+        #if sentence.count('(') != sentence.count(')'):
+        #    raise ValueError("Unbalanced parentheses: {}".format(sentence))
 
-        if sentence.find('(') > sentence.find(')'):
-            raise ValueError("First parentheses is right: {}".format(sentence))
+        #if sentence.find('(') > sentence.find(')'):
+        #    raise ValueError("First parentheses is right: {}".format(sentence))
 
         close_index = -1
         while 1:

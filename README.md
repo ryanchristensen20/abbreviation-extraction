@@ -1,31 +1,11 @@
 # Extraction of abbreviation-definition pairs
 
-[![Build Status](https://travis-ci.org/philgooch/abbreviation-extraction.svg)](https://travis-ci.org/philgooch/abbreviation-extraction)
+## Version: 0.2.6
 
-## Version: 0.2.5
+Tellic forked version: drops checks for sentence structure containing balanced parenthesis and brackets.
 
 This is a Python3 implementation of the [Schwartz-Hearst algorithm](https://psb.stanford.edu/psb-online/proceedings/psb03/schwartz.pdf)
 for identifying abbreviations and their corresponding definitions in free text[1].
-
-The [original implementation is in Java](http://biotext.berkeley.edu/software.html), and Vincent Van Asch created a Python2 implementation at
-
-http://www.cnts.ua.ac.be/~vincent/scripts/abbreviations.py
-
-* NB: As of March 2019 this link appears to be dead. 
-
-I have simplified, refactored it for Python 3 and added some tests.
-
-This version outputs a Python dictionary of abbreviation:definition pairs.
-
-
-## Installation for command-line use
-    pip install -r requirements.txt
-    
-### Usage
-
-From the command line
-
-    python abbreviations/schwartz_hearst.py <input file>
     
 ## Installation as a module
 
